@@ -22,7 +22,7 @@ nav .navbar .logo a{
     font-size: 40px;
     text-decoration: none;
     font-weight: bolder;
-    color:rgb(123, 65, 3); ;
+    color:rgb(236, 138, 10);
 
 }
 nav .navbar .menu{
@@ -39,12 +39,116 @@ nav .navbar .menu li{
     font-size: 18px;
     font-weight: 500;
     padding: 6px 0;
-    color: rgb(123, 65, 3);
+    color: rgb(209, 236, 10);
 }
 .navbar .icons a{
     font-size: 18px;
     margin: 0 6px;
-    color: rgb(3, 41, 123);
-
+    color: rgb(236, 138, 10);
 }
 
+/* about section */
+section{
+    padding-top: 40px;
+}
+section .content{
+    width: 80%;
+    margin: 40px auto;
+    font-family: 'Poppins', sans-serif;
+
+}
+.about .about-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .about-details .left{
+    width: 45%;
+}
+.about .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Home section styling */
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url("images/2.JPG");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'ubuntu, sans-serif';
+}
+.home .home-content{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.home .text-1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: rgb(209, 236, 10);
+}
+.home .text-2{
+    font-size: 50px;
+    color: rgb(209, 236, 10);
+
+}
+.home .button{
+    margin: 14px 50px 14px 0;
+}
+.home .button button{
+    outline: none;
+    margin-bottom: 150px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    background:#7f93cb; 
+    color: rgb(209, 236, 10);
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+
+
+
+/* resposive media query css */
+@media(max-width: 750px){
+    nav .navbar{
+        width: 90%;
+    }
+    nav .navbar .menu{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        background: rgb(1, 24, 57);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+    }
+    .navbar .icons a{
+        display: block;
+        font-size: 23px;
+        color: rgb(1, 24, 57);
+    }
+    .navbar .menu li a{
+        display: block;
+        color: aliceblue;
+        font-size: 23px;
+        margin: 10px 0 ;
+    }
+
+
+}
